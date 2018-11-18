@@ -149,6 +149,33 @@ hashMap.cpp.s:
 	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashMap.cpp.s
 .PHONY : hashMap.cpp.s
 
+hashNode.obj: hashNode.cpp.obj
+
+.PHONY : hashNode.obj
+
+# target to build an object file
+hashNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashNode.cpp.obj
+.PHONY : hashNode.cpp.obj
+
+hashNode.i: hashNode.cpp.i
+
+.PHONY : hashNode.i
+
+# target to preprocess a source file
+hashNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashNode.cpp.i
+.PHONY : hashNode.cpp.i
+
+hashNode.s: hashNode.cpp.s
+
+.PHONY : hashNode.s
+
+# target to generate assembly for a file
+hashNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashNode.cpp.s
+.PHONY : hashNode.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... hashMap.obj
 	@echo ... hashMap.i
 	@echo ... hashMap.s
+	@echo ... hashNode.obj
+	@echo ... hashNode.i
+	@echo ... hashNode.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
