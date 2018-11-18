@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = "C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cma
 CMakeFiles/CISC220LAB5.dir/all:
 	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/depend
 	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target CISC220LAB5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target CISC220LAB5"
 .PHONY : CMakeFiles/CISC220LAB5.dir/all
 
 # Include target in all.
@@ -80,7 +80,7 @@ all: CMakeFiles/CISC220LAB5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CISC220LAB5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CISC220LAB5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\eatmo\Google Drive\College\CISC 220\CISC220LAB5\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/CISC220LAB5.dir/rule

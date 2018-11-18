@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/HashNode.hpp">
 			<Option target="CISC220LAB5"/>
 		</Unit>
+		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/hashMap.cpp">
+			<Option target="CISC220LAB5"/>
+		</Unit>
+		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/hashMap.hpp">
+			<Option target="CISC220LAB5"/>
+		</Unit>
 		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/main.cpp">
 			<Option target="CISC220LAB5"/>
 		</Unit>

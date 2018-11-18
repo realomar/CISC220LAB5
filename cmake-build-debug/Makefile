@@ -122,6 +122,33 @@ CISC220LAB5/fast:
 	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/build
 .PHONY : CISC220LAB5/fast
 
+hashMap.obj: hashMap.cpp.obj
+
+.PHONY : hashMap.obj
+
+# target to build an object file
+hashMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashMap.cpp.obj
+.PHONY : hashMap.cpp.obj
+
+hashMap.i: hashMap.cpp.i
+
+.PHONY : hashMap.i
+
+# target to preprocess a source file
+hashMap.cpp.i:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashMap.cpp.i
+.PHONY : hashMap.cpp.i
+
+hashMap.s: hashMap.cpp.s
+
+.PHONY : hashMap.s
+
+# target to generate assembly for a file
+hashMap.cpp.s:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/hashMap.cpp.s
+.PHONY : hashMap.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... CISC220LAB5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... hashMap.obj
+	@echo ... hashMap.i
+	@echo ... hashMap.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
