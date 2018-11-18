@@ -8,6 +8,13 @@ CMakeFiles/CISC220LAB5.dir/hashMap.cpp.obj: ../hashNode.hpp
 CMakeFiles/CISC220LAB5.dir/hashNode.cpp.obj: ../hashNode.cpp
 CMakeFiles/CISC220LAB5.dir/hashNode.cpp.obj: ../hashNode.hpp
 
+CMakeFiles/CISC220LAB5.dir/main.cpp.obj: ../hashMap.hpp
 CMakeFiles/CISC220LAB5.dir/main.cpp.obj: ../hashNode.hpp
 CMakeFiles/CISC220LAB5.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/CISC220LAB5.dir/main.cpp.obj: ../makeSeuss.hpp
+
+CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.obj: ../hashMap.hpp
+CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.obj: ../hashNode.hpp
+CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.obj: ../makeSeuss.cpp
+CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.obj: ../makeSeuss.hpp
 

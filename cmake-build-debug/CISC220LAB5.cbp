@@ -97,6 +97,12 @@
 		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/main.cpp">
 			<Option target="CISC220LAB5"/>
 		</Unit>
+		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/makeSeuss.cpp">
+			<Option target="CISC220LAB5"/>
+		</Unit>
+		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/makeSeuss.hpp">
+			<Option target="CISC220LAB5"/>
+		</Unit>
 		<Unit filename="C:/Users/eatmo/Google Drive/College/CISC 220/CISC220LAB5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

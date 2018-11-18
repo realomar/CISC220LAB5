@@ -203,6 +203,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+makeSeuss.obj: makeSeuss.cpp.obj
+
+.PHONY : makeSeuss.obj
+
+# target to build an object file
+makeSeuss.cpp.obj:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.obj
+.PHONY : makeSeuss.cpp.obj
+
+makeSeuss.i: makeSeuss.cpp.i
+
+.PHONY : makeSeuss.i
+
+# target to preprocess a source file
+makeSeuss.cpp.i:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.i
+.PHONY : makeSeuss.cpp.i
+
+makeSeuss.s: makeSeuss.cpp.s
+
+.PHONY : makeSeuss.s
+
+# target to generate assembly for a file
+makeSeuss.cpp.s:
+	$(MAKE) -f CMakeFiles\CISC220LAB5.dir\build.make CMakeFiles/CISC220LAB5.dir/makeSeuss.cpp.s
+.PHONY : makeSeuss.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,6 +248,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... makeSeuss.obj
+	@echo ... makeSeuss.i
+	@echo ... makeSeuss.s
 .PHONY : help
 
 
