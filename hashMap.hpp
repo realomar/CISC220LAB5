@@ -48,9 +48,9 @@ public:
 
     void reHash();
 
-    int collHash1(int i, string k);
+    int collHash1(int h, int i, string k);
 
-    int collHash2(int i, string k);
+    int collHash2(int h,int i, string k);
 
     int findKey(string k);
 

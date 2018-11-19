@@ -1,70 +1,113 @@
-/*
- * CISC220-31L LAB 5
- *
- * 	hashNode.cpp
- *
- * Debra Yarrington
- *
- * Created on: Nov 10th, 2018
- *
- * TA: Moumita Bhattacharya
- *
- * Authors: omaromar@udel.edu Omar Ahmad
- *  		tamimoz@udel.edu  Ahmad Tamimi
- *
- */
-
 #include "hashNode.hpp"
-#include <iostream>
+#include <time.h>
 #include <stdlib.h>
-#include <string>
-#include <ctime>
 using namespace std;
-
-hashNode:: hashNode() {
+//------------------------------------------------------------------------------------------------------------------
+/*Function hashNode()
+ * Purpose
+ * 		Constructor for the hashNode class
+ * Input
+ * 		None
+ * Returns
+ * 		None
+ */
+hashNode::hashNode(){
     keyword = "";
     valuesSize = 0;
     currSize = 0;
     values = NULL;
-    srand(time(0));
 }
-
-hashNode:: hashNode(string s){
+//------------------------------------------------------------------------------------------------------------------
+/*Function hashNode(string s)
+ * Purpose
+ * 		Overloaded Constructor for the hashNode class
+ * Input
+ * 		S : keyword for the node, but no values are inserted into the values array
+ * Returns
+ * 		None
+ */
+hashNode::hashNode(string s){
     keyword = s;
-    valuesSize = 100;
+    valuesSize = 1000;
     currSize = 0;
     values = new string[valuesSize];
-    srand(time(0));
-
 }
-
-void hashNode:: addValue(string v){
-    values[currSize] = v;
-    currSize++;
-    if(currSize == valuesSize){
-        dblArray();
+//------------------------------------------------------------------------------------------------------------------
+/*Function hashNode(string s, string v)
+ * Purpose
+ * 		Overloaded Constructor for the hashNode class
+ * Input
+ * 		String s : keyword for the associated value v
+ * 		String v : value that goes with the keyword s
+ * Returns
+ * 		None
+ */
+hashNode::hashNode(string s, string v){
+    keyword = s;
+    valuesSize = 1000;
+    currSize = 1;
+    values = new string[valuesSize];
+    values[0] = v;
+}
+//--------------------------------------------------------------------------------------------------------------------
+/*Function addValue(string v)
+ * Purpose
+ * 		adds the value to the valuesArray of the hashNode
+ * Input
+ * 		string v : the value to be added.
+ * Returns
+ * 		None
+ */
+void hashNode::addValue(string v){
+    if(currSize < valuesSize){
+        values[currSize] = v;
+        currSize = currSize + 1;
+        cout << currSize << " currSize has increased" << endl;
     }
-}
+    else{
+        dblArray();
+        values[currSize] = v;
+        currSize = currSize + 1;
+        cout << currSize << " currSize has increased" << endl;
+    }
 
-void hashNode:: dblArray(){
-    string *tmp = new string[valuesSize * 2];
+}
+//--------------------------------------------------------------------------------------------------------------------
+/*Function dblArray()
+ * Purpose
+ * 		doubles the size of the values array
+ * Input
+ * 		None
+ * Returns
+ * 		None
+ */
+void hashNode::dblArray(){
+    string *tmp = new string[valuesSize*2];
 
     for(int i = 0; i < valuesSize; i++){
         tmp[i] = values[i];
     }
-    valuesSize *= 2;
     values = tmp;
+    valuesSize = valuesSize * 2;
+
 }
-
-string hashNode:: getRandValue(){
-
+//-------------------------------------------------------------------------------------------------------------------
+/*Function getRandValue()
+ * Purpose
+ * 		Returns a random value in the values array
+ * Input
+ * 		None
+ * Returns
+ * 		None
+ */
+string hashNode::getRandValue(){
+    cout << currSize << endl;
     if(currSize == 0){
-        return "";
+        return("");
     }
-    else {
-
-        int rando = rand() % currSize;
-        return values[rando];
-
+    else{
+        cout << "Current size " << currSize<< endl;
+        int rand1 = rand() % currSize;
+        return(values[rand1]);
     }
 }
